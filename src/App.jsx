@@ -1,100 +1,21 @@
 import { useState } from "react";
 import "./App.css";
+import Section1 from "./components/Section1";
+import Section2 from "./components/Section2";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <nav id="desktop-nav">
-        <div className="logo">John Doe</div>
-        <div>
-          <ul className="nav-links">
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#experience">Experience</a>
-            </li>
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <nav id="hamburger-nav">
-        <div className="logo">John Doe</div>
-        <div className="hamburger-menu">
-          <div className="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div className="menu-links">
-            <li>
-              <a href="#about" onclick="toggleMenu()">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#experience" onclick="toggleMenu()">
-                Experience
-              </a>
-            </li>
-            <li>
-              <a href="#projects" onclick="toggleMenu()">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="#contact" onclick="toggleMenu()">
-                Contact
-              </a>
-            </li>
-          </div>
-        </div>
-      </nav>
-      <section id="profile">
-        <div className="section__pic-container">
-        <img src="/imagens/profile-pic.png.jpeg" alt="John Doe profile picture" />
-        </div>
-        <div className="section__text">
-          <p className="section__text__p1">Olá, eu sou</p>
-          <h1 className="title">Vinicius Conti</h1>
-          <p className="section__text__p2">Frontend Developer</p>
-          <div className="btn-container">
-            <button
-              className="btn btn-color-2"
-              onclick="window.open('./imagens/resume-example.pdf')"
-            >
-              Download CV
-            </button>
-            <button
-              className="btn btn-color-1"
-              onclick="location.href='./#contact'"
-            >
-              Contact Info
-            </button>
-          </div>
-          <div id="socials-container">
-            <img
-              src="./imagens/linkedin.png"
-              alt="My LinkedIn profile"
-              className="icon"
-              onclick="location.href='https://www.linkedin.com/feed/'"
-            />
-            <img
-              src="./imagens/github.png"
-              alt="My Github profile"
-              className="icon"
-              onclick="location.href='https://github.com/dashboard'"
-            />
-          </div>
-        </div>
-      </section>
+
+    {/* SECTION1: Nav */}
+      <Section1 />
+
+      {/* SECTION2: Pofile */}
+      <Section2 />
+
+      {/* SECTION3: About */}
       <section id="about">
         <p className="section__text__p1">Conheça mais</p>
         <h1 className="title">Sobre mim</h1>
@@ -149,6 +70,7 @@ function App() {
           onclick="location.href='./#experience'"
         />
       </section>
+      {/* SECTION4: Expirience */}
       <section id="experience">
         <p className="section__text__p1">Explore minhas</p>
         <h1 className="title">Esperiências</h1>
@@ -261,6 +183,8 @@ function App() {
           onclick="location.href='./#projects'"
         />
       </section>
+
+      {/* SECTION5: Projects */}
       <section id="projects">
         <p className="section__text__p1">Navege em meus recentes</p>
         <h1 className="title">Projetos</h1>
@@ -315,6 +239,8 @@ function App() {
           onclick="location.href='./#contact'"
         />
       </section>
+
+      {/* SECTION6: Contact */}
       <section id="contact">
         <p className="section__text__p1">Entre em contato</p>
         <h1 className="title">Comigo</h1>
@@ -341,6 +267,8 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* SECTION7: Footer */}
       <footer>
         <nav>
           <div className="nav-links-container">
