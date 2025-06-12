@@ -38,7 +38,7 @@ function Section2() {
               src="./imagens/github.png"
               alt="My Github profile"
               className="icon"
-              onclick="location.href='https://github.com/dashboard'"
+              onclick="location.href='https://github.com/'"
             />
           </div>
         </div>

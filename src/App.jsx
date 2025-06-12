@@ -193,7 +193,7 @@ function App() {
             <div className="details-container color-container">
               <div className="article-container">
                 <img
-                  src="./imagens/project-1.png"
+                  src="./imagens/Screenshot_1.png"
                   alt="Project 1"
                   className="project-img"
                 />
@@ -204,7 +204,7 @@ function App() {
               <div className="btn-container">
                 <button
                   className="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
+                  onclick="location.href='https://github.com/viniconti/conti-Mobile-First'"
                 >
                   Github
                 </button>
@@ -213,7 +213,7 @@ function App() {
             <div className="details-container color-container">
               <div className="article-container">
                 <img
-                  src="./imagens/project-2.png"
+                  src="./imagens/Screenshot_2.png"
                   alt="Project 2"
                   className="project-img"
                 />
@@ -224,7 +224,7 @@ function App() {
               <div className="btn-container">
                 <button
                   className="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
+                  onclick="https://github.com/viniconti/prova-part-2'"
                 >
                   Github
                 </button>
